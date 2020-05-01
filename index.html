@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Money Clicker</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/normalize.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="menu">        
+            <div class="buttons-wrapper">
+            <button class="btn-item" onclick="popUp()">Info</button>
+            </div>
+        </div>
+        <div id="game-content">
+            <h1>Money Clicker</h1>
+            <h2 id="moneyAmount"></h2>
+            <h3 id="moneyPerSecond"></h3>
+            <div id="money" style="cursor: pointer;" onclick="moneyClicked()">
+            <img src="images/money-bag.png">
+            </div>
+    
+            <button class="btn-content" onclick="buyClickers('workers','workerCost')">
+                Buy Worker for <span id="workerCost"></span>
+            </button>
+            <div id="numberOfWorkers" class="text-bold"></div>
+
+            <button class="btn-content" onclick="buyClickers('teamLeaders','teamLeadersCost')">
+                Buy Team Leaders For <span id="teamLeadersCost"></span> 
+            </button>
+            <div id="numberOfTeamLeaders" class="text-bold"></div>
+
+            <button class="btn-content" onclick="buyClickers('managers','managersCost')">
+                Buy Managers For <span id="managersCost"></span>
+            </button>
+            <div id="numberOfManagers" class="text-bold"></div>
+
+            <div id="popup-info">
+                <h2>Welcome to money clicker game</h2>
+                <p>Just clisk on the money bag to produce some money</p>
+                <p>after you have enough money you can hire employees to work for you</p>
+
+            </div>
+        </div>
+
+
+        
+        <footer>@ Coppyright All rights reserved!</footer>
+    </body>
+
+</html>
